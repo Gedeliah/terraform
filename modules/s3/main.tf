@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "class" {
-  bucket = "nullsector"
+  bucket = var.bucket_name
 
   tags = {
     Name = local.ec2_tag
